@@ -1,0 +1,76 @@
+body {
+    color: #4a4a4a
+}
+
+section {
+    padding: 32px 0px 32px 24px;    
+}
+
+
+/* Navigation Bar */
+nav {
+    height: 64px;
+    padding: 0 24px;
+}
+
+.navbar {
+    padding:0 24px;
+}
+
+.navbar-expand .navbar-nav .nav-link { /* remove boostrap default padding */
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.navbar-brand { /* set navbrand height */
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand p { /* navbrand font */
+    display: inline;
+}
+.nav-item { /* space between each nav item */
+    margin-left: 16px;
+}
+
+.menu a { /* nav item a tag style */
+    text-decoration: none;
+    color: inherit
+}
+
+.nav-icon { /* hide nav item icon on desktop */
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar-brand p { /* hide navbrand font on small screen */
+        display: none;
+    }
+
+    .nav-item { 
+        width: 100%;
+        text-align: right;
+    }
+
+    .navbar-nav { /* grow nav item width */
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 537px) {
+    a.nav-link { /* hide nav item text */
+        display: none;
+    }
+
+    .nav-icon { /* show nav item icon on small screen/ mobile device */
+        display: block;
+        height: 32px;
+        margin: 0;
+    }
+
+    li.or-companies { /* hide "or companies" option */
+        display: none;
+    }
+}
