@@ -44,6 +44,10 @@ a, p {
 }
 
 /* Navigation Bar */
+ul a {
+    font-size: 20px;    
+}
+
 nav {
     height: 64px;
     padding: 0 24px;
@@ -80,7 +84,7 @@ nav {
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
     .navbar-brand p { /* hide navbrand font on small screen */
         display: none;
     }
@@ -95,7 +99,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 537px) {
+@media only screen and (max-width: 768px) {
     a.nav-link { /* hide nav item text */
         display: none;
     }
@@ -109,4 +113,36 @@ nav {
     li.or-companies { /* hide "or companies" option */
         display: none;
     }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .col-lg-60 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+        padding: 0px 15px;
+    }
+}
+
+.col-lg-60 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0px
+}
+
+
+
+
+/* test */
+
+.right-row {
+    height:33%;
+    overflow: hidden;
+}
+
+.left-row {
+    height: 66%;
+    overflow: hidden;
 }
