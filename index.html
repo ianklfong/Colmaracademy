@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,507 +8,557 @@
 
     <!-- Stylesheets linking -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="./styles.css">
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
-    defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
-    defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"
-    defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
 
 
     <!-- Site title -->
     <title>Colaracademy</title>
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-      <!-- site logo -->
-      <a class="navbar-brand" href="#">
-        <!-- logo icon -->
-        <img class="" src="./capstone_colmar_assets/images/ic-logo.svg" alt="">
-        <!-- logo font -->
-        <p class="font-weight-light" style="color:#b7b7b7; font-size: 20px;"><span class="font-weight-bold" style="color: #6d6d6d;">COLMAR</span>ACADEMY</p>
-      </a>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        <!-- site logo -->
+        <a class="navbar-brand fade-in-y" href="#">
+            <!-- logo icon -->
+            <img class="" src="./capstone_colmar_assets/images/ic-logo.svg" alt="">
+            <!-- logo font -->
+            <p class="font-weight-light" style="color:#b7b7b7; font-size: 20px;"><span class="font-weight-bold" style="color: #6d6d6d;">COLMAR</span>ACADEMY</p>
+        </a>
 
-      <!-- nav menu -->
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <!-- nav-item 1: On campus -->
-          <li class="nav-item">
-            <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-on-campus.svg" alt="Sign in">
-            <a class="nav-link" href="#">On campus <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- nav-item 2: Online -->
-          <li class="nav-item">
-            <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-online.svg" alt="Sign in">
-            <a class="nav-link" href="#">Online</a>
-          </li>
-          <!-- nav-item 3: or companies -->
-          <li class="nav-item or-companies">
-            <a class="nav-link" href="#">or companies</a>
-          </li>
-          <!-- nav-item 4: Sign in -->
-          <li class="nav-item">
-            <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-login.svg" alt="Sign in">
-            <a class="nav-link" href="#">Sign in</a>
-          </li>
-        </ul>
-      </div>
-  
-  </nav>
-  <!-- End of Navigation Bar -->
-
-  <!-- Start of Main -->
-  <main>
-    <!-- Section 1: Welcome - Start -->
-    <section style="background-color: #e4e4e4;">  
-      <div class="row">
-        <!-- Left column: Banner -->
-          <div class="col-lg-60 banner">
-            <!-- Change image by "src" attribute -->
-            <img class="w-100" src="./capstone_colmar_assets/images/banner.jpg" alt="COLMARACADEMY" style="object-fit: top;">
-          </div>
-          <!-- Right column: Content -->
-          <div class="col-lg-40 my-auto right-description">
-            <!-- Tagline -->
-            <h1 class="font-weight-bold mb-0">
-              <span></span>
-              Learn something
-            </h1>
-            <h1 class="font-weight-bold mb-0">
-              <span></span>
-              new everyday
-            </h1>
-            <!-- Text -->
-            <h4 class="mb-0">
-              Lorem ipsum dolor sit amet, <br>
-              consectetur adipisicing elit.</h4>
-            <!-- Start Button -->
-            <button type="button" class="btn rounded-0">Start here</button>
-          </div>
-      </div>
-    </section>
-    <!-- Section 1: Welcome - End -->
-
-    
-  <!-- Section 2: Information - Start -->
-  <section style="margin-right: 0px">  
-    <div class="row" style="padding: 0px">
-        <!-- Left column: Banner -->
-        <div class="col-lg-60 d-none d-md-block" style="padding: 16px 12px 16px 24px;">
-          <div class="row left-row" style="overflow: hidden; padding: 16px 0px 16px 0px">
-            <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-main.jpg" alt="COLMARACADEMY" style="object-fit: cover;">
-          </div>
-          <div class="row">
-            
-          <h2 class="font-weight-bold">It doesn't hurt to keep practicing</h2>
-          <p style="margin-top: 24px">"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula" 
-            <br>
-            <br>
-            <span class="font-weight-bold">Emanual, Sr Strategist at Hiring.com</span>
-          </p>
-          </div>
-
-        </div>
-        <!-- Right column: Content -->
-        <div class="col border-left right-column information-right">
-          <!-- 1st Row -->
-          <div class="row right-row border-bottom">
-            <div class="d-none d-md-block" style="overflow: hidden; width: 35%;">
-              <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-orientation.jpg" alt="" style="object-fit: cover;">
-            </div>
-            <div class="col-12 d-md-none" style="overflow: hidden;">
-              <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="" style="object-fit: cover;">
-            </div>
-            <div class="col my-auto information-detail" style="padding-left: 16px;">
-              <h3>Orientation date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
-          <!-- 2nd Row -->
-          <div class="row right-row" >
-            <div class="d-none d-md-block" style="overflow: hidden; width: 35%;">
-              <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-campus.jpg" alt="" style="object-fit: cover;">
-            </div>
-            <div class="col-12 d-md-none" style="overflow: hidden;">
-              <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-campus-mobile.jpg" alt="" style="object-fit: cover;">
-            </div>
-            <div class="col my-auto information-detail" style="padding-left: 16px;">
-              <h3>Our Campus</h3>
-              <p>Find which campus is close by you</p>
-              <a href="#">Read more</a>
-            </div>
-          </div>
-          <!-- 3rd Row -->
-          <div class="row right-row" style="background-color: #e5e5e5;">
-            <div class="d-none d-md-block" style="overflow: hidden; width: 35%;">
-            <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="" style="object-fit: cover;">
-          </div>
-          <div class="col-12 d-md-none" style="overflow: hidden;">
-            <img class="w-100 h-100" src="./capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="" style="object-fit: cover;">
-          </div>
-          <div class="col my-auto information-detail" style="padding-left: 16px;">
-            <h3>Our guest lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
-        </div>
-        </div>
-  </section>
-
-
-
-
-
-    <!-- Section 3: Courses - Start -->
-    <section class="courses">
-      <div class="container-fluid" style="padding: 32px 0px;">
-        <!-- Section Title -->
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="font-weight-bold" style="margin-bottom: 16px;">Start learning</h2>
-          </div>
-        </div>
-        <!-- Section Body: Cards -->
-        <div class="d-none d-md-block">
-          <!-- 1st Row -->
-          <div class="row" style="margin-top: 32px; padding: 0px 56px">
-            <!-- Card 1: Software engineering -->
-            <div class="col-md-4" style="padding:0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-software.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Software engineering</h3>
-                  <!-- Course Desciption -->
-                  <p class="card-text font-weight-light" style="margin: 8px 0px;">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    Web Development, Mobile Development, iOT, APIs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2: Computer art -->
-            <div class="col-md-4" style="padding: 0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-computer-art.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Computer art</h3>
-                  <!-- Course Desciption -->
-                  <p class="card-text font-weight-light" style="margin: 8px 0px;">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3: Design -->
-            <div class="col-md-4" style="padding:0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-design.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Design</h3>
-                  <!-- Course Desciption -->
-                  <p style="margin: 8px 0px;" class="card-text font-weight-light">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    User Experience Design, User Research, Visual Design
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 2nd Row -->
-          <div class="row" style="margin-top: 32px;padding: 0px 56px">
-            <!-- Card 4: Data -->
-            <div class="col-md-4" style="padding:0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-data.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Data</h3>
-                  <!-- Course Desciption -->
-                  <p class="card-text font-weight-light" style="margin: 8px 0px;">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    Data Science, Big Data, SQL, Data Visualization
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 5: Business -->
-            <div class="col-md-4" style="padding: 0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-business.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Business</h3>
-                  <!-- Course Desciption -->
-                  <p class="card-text font-weight-light" style="margin: 8px 0px;">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    Product Development, Business, Development, Startup
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 6: Marketing -->
-            <div class="col-md-4" style="padding:0px 16px">
-              <div class="card w-100 h-100" >
-                <img class="card-img-top" src="./capstone_colmar_assets/images/course-marketing.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <!-- Course Title -->
-                  <h3>Marketing</h3>
-                  <!-- Course Desciption -->
-                  <p style="margin: 8px 0px;" class="card-text font-weight-light">COURSES</p>
-                  <p class="card-text font-weight-light">
-                    Analytics, Content Marketing, Mobile Marketing
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- nav menu -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- nav-item 1: On campus -->
+                <li class="nav-item fade-in-y">
+                    <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-on-campus.svg" alt="Sign in">
+                    <a class="nav-link" href="#">On campus <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- nav-item 2: Online -->
+                <li class="nav-item fade-in-y">
+                    <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-online.svg" alt="Sign in">
+                    <a class="nav-link" href="#">Online</a>
+                </li>
+                <!-- nav-item 3: or companies -->
+                <li class="nav-item or-companies fade-in-y">
+                    <a class="nav-link" href="#">or companies</a>
+                </li>
+                <!-- nav-item 4: Sign in -->
+                <li class="nav-item fade-in-y">
+                    <img class="nav-icon ml-auto mt-1" src="./capstone_colmar_assets/images/ic-login.svg" alt="Sign in">
+                    <a class="nav-link" href="#">Sign in</a>
+                </li>
+            </ul>
         </div>
 
-        <!-- Below Mediumn Screen Collapse -->
-        <div class="container d-md-none">
-          <div id="accordion">
-            <!-- Card 1: Software Engineering -->
-            <div class="card border-0 course-collapse-card">
-              <div class="card-header border-0" id="headingSE">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#softwareEngineering" aria-expanded="true" aria-controls="softwareEngineering">
+    </nav>
+    <!-- End of Navigation Bar -->
+
+
+    <!-- Start of Main -->
+    <main>
+        <!-- Section 1: Welcome - Start -->
+        <section id="welcome" style="background-color: #e4e4e4; margin-top: 64px;">
+            <div class="narrower">
+
+
+                <div class="row">
+                    <!-- Left column: Banner -->
+                    <div class="col-lg-60 banner">
+                        <!-- Change image by "src" attribute -->
+                        <img class="w-100" src="./capstone_colmar_assets/images/banner.jpg" alt="COLMARACADEMY" style="object-fit: top;">
+                    </div>
+                    <!-- Right column: Content -->
+                    <div class="col-lg-40 my-auto right-description">
+                        <!-- Tagline -->
+                        <h1 class="font-weight-bold mb-0">
+                            <span></span> Learn something
+                        </h1>
+                        <h1 class="font-weight-bold mb-0">
+                            <span></span> new everyday
+                        </h1>
+                        <!-- Text -->
+                        <h4 class="mb-0">
+                            Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</h4>
+                        <!-- Start Button -->
+                        <button type="button" class="btn rounded-0" onClick="location.href='#information'">Start here</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 1: Welcome - End -->
+
+
+        <!-- Section 2: Information - Start -->
+        <section id="information " style="/*margin-right: 0px*/ ">
+            <div class="narrower ">
+
+                <div class="row " style="padding: 0px ">
+                    <!-- Left column: Banner -->
+                    <div class="col-lg-60 d-none d-md-block " style="padding: 16px 12px 16px 24px; ">
+                        <div class="row left-row " style="overflow: hidden; padding: 16px 0px 16px 0px ">
+                            <img class="w-100 h-100 fade-in-x " src="./capstone_colmar_assets/images/information-main.jpg " alt="COLMARACADEMY " style="object-fit: cover; ">
+                        </div>
+                        <div class="row ">
+
+                            <h2 class="font-weight-bold ">It doesn't hurt to keep practicing</h2>
+                            <p style="margin-top: 24px ">"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula
+                                "
+                                <br>
+                                <br>
+                                <span class="font-weight-bold ">Emanual, Sr Strategist at Hiring.com</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- Right column: Content -->
+                    <div class="col border-left right-column information-right ">
+                        <!-- 1st Row -->
+                        <div class="row right-row border-bottom ">
+                            <div class="d-none d-md-block h-100 " style="overflow: hidden; width: 35%; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-orientation.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col-12 d-md-none " style="overflow: hidden; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-orientation-mobile.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col my-auto information-detail " style="padding-left: 16px; ">
+                                <h3>Orientation date</h3>
+                                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                                <a href="# ">Read more</a>
+                            </div>
+                        </div>
+                        <!-- 2nd Row -->
+                        <div class="row right-row ">
+                            <div class="d-none d-md-block " style="overflow: hidden; width: 35%; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-campus.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col-12 d-md-none " style="overflow: hidden; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-campus-mobile.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col my-auto information-detail " style="padding-left: 16px; ">
+                                <h3>Our Campus</h3>
+                                <p>Find which campus is close by you</p>
+                                <a href="# ">Read more</a>
+                            </div>
+                        </div>
+                        <!-- 3rd Row -->
+                        <div class="row right-row " style="background-color: #e5e5e5; ">
+                            <div class="d-none d-md-block h-100 " style="overflow: hidden; width: 35%; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-guest-lecture.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col-12 d-md-none " style="overflow: hidden; ">
+                                <img class="w-100 h-100 " src="./capstone_colmar_assets/images/information-guest-lecture-mobile.jpg " alt=" " style="object-fit: cover; ">
+                            </div>
+                            <div class="col my-auto information-detail " style="padding-left: 16px; ">
+                                <h3>Our guest lecture</h3>
+                                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                                <a href="# ">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Section 3: Courses - Start -->
+        <section id="courses" class="courses ">
+            <div class="container-fluid " style="padding: 32px 0px; ">
+                <!-- Section Title -->
+                <div class="row ">
+                    <div class="col text-center ">
+                        <h2 class="font-weight-bold " style="margin-bottom: 16px; ">Start learning</h2>
+                    </div>
+                </div>
+                <div class="narrower ">
+                    <!-- Section Body: Cards -->
+                    <div class="d-none d-md-block ">
+                        <!-- 1st Row -->
+                        <div class="row " style="margin-top: 32px; padding: 0px 56px ">
+                            <!-- Card 1: Software engineering -->
+                            <div class="col-md-4 " style="padding:0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-software.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Software engineering</h3>
+                                        <!-- Course Desciption -->
+                                        <p class="card-text font-weight-light " style="margin: 8px 0px; ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            Web Development, Mobile Development, iOT, APIs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2: Computer art -->
+                            <div class="col-md-4 " style="padding: 0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-computer-art.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Computer art</h3>
+                                        <!-- Course Desciption -->
+                                        <p class="card-text font-weight-light " style="margin: 8px 0px; ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3: Design -->
+                            <div class="col-md-4 " style="padding:0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-design.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Design</h3>
+                                        <!-- Course Desciption -->
+                                        <p style="margin: 8px 0px; " class="card-text font-weight-light ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            User Experience Design, User Research, Visual Design
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd Row -->
+                        <div class="row " style="margin-top: 32px;padding: 0px 56px ">
+                            <!-- Card 4: Data -->
+                            <div class="col-md-4 " style="padding:0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-data.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Data</h3>
+                                        <!-- Course Desciption -->
+                                        <p class="card-text font-weight-light " style="margin: 8px 0px; ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            Data Science, Big Data, SQL, Data Visualization
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5: Business -->
+                            <div class="col-md-4 " style="padding: 0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-business.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Business</h3>
+                                        <!-- Course Desciption -->
+                                        <p class="card-text font-weight-light " style="margin: 8px 0px; ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            Product Development, Business, Development, Startup
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 6: Marketing -->
+                            <div class="col-md-4 " style="padding:0px 16px ">
+                                <div class="card w-100 h-100 ">
+                                    <img class="card-img-top " src="./capstone_colmar_assets/images/course-marketing.jpg " alt="Card image cap ">
+                                    <div class="card-body ">
+                                        <!-- Course Title -->
+                                        <h3>Marketing</h3>
+                                        <!-- Course Desciption -->
+                                        <p style="margin: 8px 0px; " class="card-text font-weight-light ">COURSES</p>
+                                        <p class="card-text font-weight-light ">
+                                            Analytics, Content Marketing, Mobile Marketing
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Below Mediumn Screen Collapse -->
+                    <div class="container d-md-none ">
+                        <div id="accordion ">
+                            <!-- Card 1: Software Engineering -->
+                            <div class="card border-0 course-collapse-card ">
+                                <div class="card-header border-0 " id="headingSE ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#softwareEngineering " aria-expanded="true " aria-controls="softwareEngineering ">
                     Software Engineering
                   </button>
-                </h5>
+                                    </h5>
 
-              </div>
-              
-              <div id="softwareEngineering" class="collapse" aria-labelledby="headingSE" data-parent="#accordion">
-                <div class="card-body">
-                  <p>COURSES</p> 
-                  <p>
-                    Web Development, Mobile Development, iOT, APIs
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          <!-- Card 2: Computer Art -->
-          <div class="card border-0 course-collapse-card" style="margin-top: 8px;">
-            <!-- Card Title -->
-            <div class="card-header border-0" id="headingCA">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#computerArt" aria-expanded="true" aria-controls="computerArt">
+                                </div>
+
+                                <div id="softwareEngineering " class="collapse " aria-labelledby="headingSE " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            Web Development, Mobile Development, iOT, APIs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Computer Art -->
+                            <div class="card border-0 course-collapse-card " style="margin-top: 8px; ">
+                                <!-- Card Title -->
+                                <div class="card-header border-0 " id="headingCA ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#computerArt " aria-expanded="true " aria-controls="computerArt ">
                   Computer Art
                 </button>
-              </h5>
-            </div>
-            <!-- Expanded Content -->
-            <div id="computerArt" class="collapse" aria-labelledby="headingCA" data-parent="#accordion">
-              <div class="card-body">
-                <p>COURSES</p> 
-                <p>
-                  Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
-                </p>
-              </div>
-            </div>
-          </div>
+                                    </h5>
+                                </div>
+                                <!-- Expanded Content -->
+                                <div id="computerArt " class="collapse " aria-labelledby="headingCA " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-          <!-- Card 3: Design -->
-          <div class="card border-0 course-collapse-card" style="margin-top: 8px;">
-            <!-- Card Title -->
-            <div class="card-header border-0" id="headingDS">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#design" aria-expanded="true" aria-controls="design">
+                            <!-- Card 3: Design -->
+                            <div class="card border-0 course-collapse-card " style="margin-top: 8px; ">
+                                <!-- Card Title -->
+                                <div class="card-header border-0 " id="headingDS ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#design " aria-expanded="true " aria-controls="design ">
                   Design
                 </button>
-              </h5>
-            </div>
-            <!-- Expanded Content -->
-            <div id="design" class="collapse" aria-labelledby="headingDS" data-parent="#accordion">
-              <div class="card-body">
-                <p>COURSES</p> 
-                <p>
-                  User Experience Design, User Research, Visual Design
-                </p>
-              </div>
-            </div>
-          </div>
+                                    </h5>
+                                </div>
+                                <!-- Expanded Content -->
+                                <div id="design " class="collapse " aria-labelledby="headingDS " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            User Experience Design, User Research, Visual Design
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-          <!-- Card 4: Data -->
-          <div class="card border-0 course-collapse-card" style="margin-top: 8px;">
-            <!-- Card Title -->
-            <div class="card-header border-0" id="headingDT">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#data" aria-expanded="true" aria-controls="data">
+                            <!-- Card 4: Data -->
+                            <div class="card border-0 course-collapse-card " style="margin-top: 8px; ">
+                                <!-- Card Title -->
+                                <div class="card-header border-0 " id="headingDT ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#data " aria-expanded="true " aria-controls="data ">
                   Data
                 </button>
-              </h5>
-            </div>
-            <!-- Expanded Content -->
-            <div id="data" class="collapse" aria-labelledby="headingDT" data-parent="#accordion">
-              <div class="card-body">
-                <p>COURSES</p> 
-                <p>
-                  Data Science, Big Data, SQL, Data Visualization
-                </p>
-              </div>
-            </div>
-          </div>
+                                    </h5>
+                                </div>
+                                <!-- Expanded Content -->
+                                <div id="data " class="collapse " aria-labelledby="headingDT " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            Data Science, Big Data, SQL, Data Visualization
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-          <!-- Card 5: Business -->
-          <div class="card border-0 course-collapse-card" style="margin-top: 8px;">
-            <!-- Card Title -->
-            <div class="card-header border-0" id="headingBS">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#business" aria-expanded="true" aria-controls="business">
+                            <!-- Card 5: Business -->
+                            <div class="card border-0 course-collapse-card " style="margin-top: 8px; ">
+                                <!-- Card Title -->
+                                <div class="card-header border-0 " id="headingBS ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#business " aria-expanded="true " aria-controls="business ">
                   Business
                 </button>
-              </h5>
-            </div>
-            <!-- Expanded Content -->
-            <div id="business" class="collapse" aria-labelledby="headingBS" data-parent="#accordion">
-              <div class="card-body">
-                <p>COURSES</p> 
-                <p>
-                  Product Development, Business, Development, Startup
-                </p>
-              </div>
-            </div>
-          </div>
+                                    </h5>
+                                </div>
+                                <!-- Expanded Content -->
+                                <div id="business " class="collapse " aria-labelledby="headingBS " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            Product Development, Business, Development, Startup
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-          <!-- Card 6: Marketing -->
-          <div class="card border-0 course-collapse-card" style="margin-top: 8px;">
-            <!-- Card Title -->
-            <div class="card-header border-0" id="headingMK">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#marketing" aria-expanded="true" aria-controls="marketing">
+                            <!-- Card 6: Marketing -->
+                            <div class="card border-0 course-collapse-card " style="margin-top: 8px; ">
+                                <!-- Card Title -->
+                                <div class="card-header border-0 " id="headingMK ">
+                                    <h5 class="mb-0 ">
+                                        <button class="btn btn-link " data-toggle="collapse " data-target="#marketing " aria-expanded="true " aria-controls="marketing ">
                   Marketing
                 </button>
-              </h5>
+                                    </h5>
+                                </div>
+                                <!-- Expanded Content -->
+                                <div id="marketing " class="collapse " aria-labelledby="headingMK " data-parent="#accordion ">
+                                    <div class="card-body ">
+                                        <p>COURSES</p>
+                                        <p>
+                                            Analytics, Content Marketing, Mobile Marketing
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-            <!-- Expanded Content -->
-            <div id="marketing" class="collapse" aria-labelledby="headingMK" data-parent="#accordion">
-              <div class="card-body">
-                <p>COURSES</p> 
-                <p>
-                  Analytics, Content Marketing, Mobile Marketing
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
-        </div>
-          
-        </div>
+        </section>
+        <!-- Section 3: Courses - End -->
 
 
-    </section>
-    <!-- Section 3: Courses - End -->
-
-    
-    <!-- Section 4: Thesis Exhibit - Start -->
-    <section class="border-bottom">
-      <div class="container-fluid" style="padding:32px 0px 0px 0px">
-        <!-- Section Title -->
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="font-weight-bold mb-0">Thesis exhibit</h2>
-          </div>
-        </div>
-    <!-- Left column: Banner -->
-    <div class="row">
-      <div class="col-lg-60 exhibit-video">
-        <div class="row left-row" style="overflow: hidden; padding: 16px 0px">
-          <video class="h-100 w-100" src="./capstone_colmar_assets/videos/thesis.mp4" autoplay="" muted="" loop="" role="presentation" style="object-fit: cover;">
+        <!-- Section 4: Thesis Exhibit - Start -->
+        <section class="border-bottom ">
+            <div class="narrower ">
+                <div style="padding:32px 0px 0px 0px ">
+                    <!-- Section Title -->
+                    <div class="row ">
+                        <div class="col text-center ">
+                            <h2 class="font-weight-bold mb-0 ">Thesis exhibit</h2>
+                        </div>
+                    </div>
+                    <!-- Left column: Banner -->
+                    <div class="row ">
+                        <div class="col-lg-60 exhibit-video ">
+                            <div class="row left-row " style="overflow: hidden; padding: 16px 0px ">
+                                <video class="h-100 w-100 " src="./capstone_colmar_assets/videos/thesis.mp4 " autoplay=" " muted=" " loop=" " role="presentation " style="object-fit: cover; ">
             Undable to display video
           </video>
-        </div>
-        <div class="row d-none d-md-flex">
-          <h2 class="font-weight-bold" style="margin: 8px 0px">Reimagine urban</h2>
-          <p class="mb-0">"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula" 
-          </p>
-        </div>
+                            </div>
+                            <div class="row d-none d-md-flex ">
+                                <h2 class="font-weight-bold " style="margin: 8px 0px ">Reimagine urban</h2>
+                                <p class="mb-0 ">"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula
+                                    "
+                                </p>
+                            </div>
 
-      </div>
-      <!-- Right column: Content -->
-      <div class="col d-none d-md-block" style="padding: 16px 0px 16px 0px;">
-        <!-- 1st Row -->
-        <div class="row right-row" style="background-color: #e5e5e5;">
-          <div class="h-100" style="overflow: hidden; width: 35%;">
-            <img class="w-100 h-100" src="./capstone_colmar_assets/images/thesis-fisma.jpg" alt="" style="object-fit: cover;">
-          </div>
-          <div class="col my-auto information-detail" style="padding-left: 16px;">
-            <h3>Fisma: Design and Prototype</h3>
-            <p>Designer showcase of new prototype product</p>
-          </div>
-        </div>
-        <!-- 1st Row -->
-        <div class="row right-row">
-          <div style="overflow: hidden; width: 35%; height: 100%;">
-            <img class="w-100 h-100" src="./capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="" style="object-fit: cover;">
-          </div>
+                        </div>
+                        <!-- Right column: Content -->
+                        <div class="col d-none d-md-block " style="padding: 16px 0px 16px 0px; ">
+                            <!-- 1st Row -->
+                            <div class="row right-row " style="background-color: #e5e5e5; ">
+                                <div class="h-100 " style="overflow: hidden; width: 35%; ">
+                                    <img class="w-100 h-100 " src="./capstone_colmar_assets/images/thesis-fisma.jpg " alt=" " style="object-fit: cover; ">
+                                </div>
+                                <div class="col my-auto information-detail " style="padding-left: 16px; ">
+                                    <h3>Fisma: Design and Prototype</h3>
+                                    <p>Designer showcase of new prototype product</p>
+                                </div>
+                            </div>
+                            <!-- 1st Row -->
+                            <div class="row right-row ">
+                                <div style="overflow: hidden; width: 35%; height: 100%; ">
+                                    <img class="w-100 h-100 " src="./capstone_colmar_assets/images/thesis-now-and-then.jpg " alt=" " style="object-fit: cover; ">
+                                </div>
 
-          <div class="col my-auto information-detail" style="padding-left: 16px;">
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
-          </div>
-        </div>
-
-
-        </div>
-        
-      </div>
-    </div>
-        
-            
-      </div>
-    </section>
-    <!-- Section 4: Thesis Exhibit - End -->
-  </main>
-  <!-- End of Main -->
-
-  <!-- Start of Footer -->
-  <footer style="padding: 16px 24px; display: flex;">
-    <p style="display: inline;">© 2016 COLMAR ACADEMY. ALL RIGHTS RESERVED</p>
-    <ul class="ml-auto d-none d-md-flex" style="display: flex; flex-direction: row; list-style: none">
-      <li class="nav-item ">
-        <a href="" style="color: inherit;">Terms</a>
-      </li>
-      <li class="nav-item ">
-        <a href="" style="color: inherit;">Privacy</a>
-      </li>
-    </ul>
-  </footer>
-  <!-- End of Footer -->
+                                <div class="col my-auto information-detail " style="padding-left: 16px; ">
+                                    <h3>Now and then</h3>
+                                    <p>Research study about New York</p>
+                                </div>
+                            </div>
 
 
-  <!-- GSAP Link -->
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-  <script>
+                        </div>
 
-    gsap.from('.banner', {opacity:0, duration: 0.5, x: -30, ease: 'Power2.easeInOut', stagger:0.6})
-    gsap.from('h4', {opacity:0, duration: 0.7, y: -30, ease: 'Power3.easeOut'})
-    gsap.from('button', {opacity:0, duration: 0.7, y: -30, ease: 'Power3.easeOut'})
-
-    const textrev = gsap.timeline();
-    textrev.to("h1 span", {duration: 1, y: 200, stagger: 0.1 })
+                    </div>
+                </div>
+            </div>
 
 
-  </script>
-    
+            </div>
+        </section>
+        <!-- Section 4: Thesis Exhibit - End -->
+    </main>
+    <!-- End of Main -->
+
+    <!-- Start of Footer -->
+    <footer style="padding: 16px 24px; display: flex; ">
+        <p style="display: inline; ">© 2016 COLMAR ACADEMY. ALL RIGHTS RESERVED</p>
+        <ul class="ml-auto d-none d-md-flex " style="display: flex; flex-direction: row; list-style: none ">
+            <li class="nav-item ">
+                <a href=" " style="color: inherit; ">Terms</a>
+            </li>
+            <li class="nav-item ">
+                <a href=" " style="color: inherit; ">Privacy</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- GSAP Link -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js "></script>
+    <script>
+        gsap.from('.banner', {
+            opacity: 0,
+            duration: 0.5,
+            x: -30,
+            ease: 'Power2.easeInOut',
+            stagger: 0.6
+        })
+        gsap.from('.fade-in-x', {
+            opacity: 0,
+            duration: 0.5,
+            x: -30,
+            ease: 'Power2.easeInOut',
+            stagger: 0.6
+        })
+        gsap.from('.fade-in-y', {
+                opacity: 0,
+                duration: 0.5,
+                y: -10,
+                ease: 'Power2.easeInOut',
+                stagger: 0.05
+            })
+            // gsap.from('.ease-in-x', {
+            //     opacity: 0,
+            //     duration: 0.5,
+            //     x: -30,
+            //     ease: 'Power2.easeInOut',
+            //     stagger: 0.6
+            // })
+        gsap.from('h4', {
+            opacity: 0,
+            duration: 1,
+            y: -50,
+            ease: 'Power3.easeOut'
+        })
+        gsap.from('button', {
+            opacity: 0,
+            duration: 1.3,
+            y: -40,
+            ease: 'Power3.easeOut'
+        })
+        gsap.from('.right-row', {
+            opacity: 0,
+            duration: 0.5,
+            backgroundPositionX: -30,
+            ease: 'Power2.easeInOut',
+            stagger: 0.1
+        })
+
+        const textrev = gsap.timeline();
+        textrev.to("h1 span ", {
+            duration: 1.5,
+            y: 200,
+            stagger: 0.1
+        })
+    </script>
+
 </body>
+
 </html>

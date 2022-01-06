@@ -1,22 +1,24 @@
 /* Universal Style */
+
 body {
     color: #4a4a4a
 }
 
-
-
-@media only screen and (max-width: 319px) { /* disable when the screen is too small */
- main {
-     display: none;
- }
+@media only screen and (max-width: 319px) {
+    /* disable when the screen is too small */
+    main {
+        display: none;
+    }
 }
 
 
 /* fonts */
+
 h1 {
     font-size: 3.5vw;
     position: relative;
     overflow: hidden;
+    padding-bottom: 3px;
 }
 
 h2 {
@@ -31,67 +33,86 @@ h4 {
     font-size: 2vw;
 }
 
-a, p {
+a,
+p {
     font-size: 1.2vw;
 }
 
-@media only screen and (max-width: 767px) { /* font-size in mediumn screen */
+@media only screen and (max-width: 767px) {
+    /* font-size in mediumn screen */
     h1 {
         font-size: 9.5vw;
     }
-
     h2 {
         font-size: 8vw;
     }
-
     h3 {
         font-size: 6.65vw
     }
-
     h4 {
         font-size: 6.5vw;
     }
-
-    a,p {
+    a,
+    p {
         font-size: 3.5vw;
     }
 }
 
+
 /* Boostrap Component */
+
 .row {
+    /* somehow original row cause horizontal scroll */
     margin: 0px
 }
 
-.col {
-    padding: 0px;
-}
-
 .card-header {
-    padding:16px 16px 24px 16px;
+    /* collaspe button in section 3 */
+    padding: 16px 16px 24px 16px;
 }
 
 .card-body {
+    /* course description body */
     padding: 16px 16px 24px 16px;
 }
 
 .card-text {
+    /* course desciption font size */
     font-size: 1.4vw;
 }
 
 .btn-link {
+    /* collaspe button style */
     color: #6d6d6d;
     font-size: 5vw;
     font-weight: 600;
-    padding:0px;
+    padding: 0px;
 }
+
 .btn-link:hover {
     color: white;
     text-decoration: none;
 }
 
+.btn-link:focus {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Custom Component */
+
+.narrower {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
 /* Navigation Bar */
+
 ul a {
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 nav {
@@ -100,39 +121,46 @@ nav {
 }
 
 .navbar {
-    padding:0 24px;
+    padding: 0 24px;
 }
 
-.navbar-expand .navbar-nav .nav-link { /* remove boostrap default padding */
+.navbar-expand .navbar-nav .nav-link {
+    /* remove boostrap default padding */
     padding-right: 0rem;
     padding-left: 0rem;
 }
 
-.navbar-brand { /* set navbrand height */
+.navbar-brand {
+    /* set navbrand height */
     height: 32px;
     margin: 0;
     padding: 0;
 }
 
-.navbar-brand p { /* navbrand font */
+.navbar-brand p {
+    /* navbrand font */
     display: inline;
 }
-.nav-item { /* space between each nav item */
+
+.nav-item {
+    /* space between each nav item */
     margin-left: 16px;
 }
 
-.menu a { /* nav item a tag style */
+.menu a {
+    /* nav item a tag style */
     text-decoration: none;
     color: inherit
 }
 
-.nav-icon { /* hide nav item icon on desktop */
+.nav-icon {
+    /* hide nav item icon on desktop */
     display: none;
 }
 
-/* Custom Component */
 
 /* Section 1 */
+
 .banner {
     overflow: hidden;
     padding: 32px 12px 32px 24px !important;
@@ -140,26 +168,31 @@ nav {
 
 .right-description button {
     font-size: 1.6vw;
-    padding: 8px 0px 8px; color:white; 
+    padding: 8px 0px 8px;
+    color: white;
     background-color: #6d6d6d;
     width: 27vw;
 }
 
 .right-description h4 {
-    line-height: 1.5; 
+    line-height: 1.5;
     padding: 10px 0px
 }
+
 .courses {
     background-color: #eaebec;
 }
 
 
 /* Section 2 */
+
 .information-right {
     padding: 16px 0px 16px 0px;
 }
 
+
 /* Section 3 */
+
 .course-collapse-card {
     background-color: #e4e4e4;
 }
@@ -168,12 +201,20 @@ nav {
     padding: 16px 16px 48px 16px;
 }
 
+.right-row:hover {
+    opacity: 0.9;
+    /* background-color: #b6b6b6; */
+}
+
+
 /* Section 4 */
+
 .exhibit-video {
     padding: 16px 12px!important;
 }
 
-.col-lg-60, .col-lg-40 {
+.col-lg-60,
+.col-lg-40 {
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -187,20 +228,17 @@ nav {
         max-width: 60%;
         padding: 0px 15px;
     }
-    
     .col-lg-40 {
         -ms-flex: 0 0 40%;
         flex: 0 0 40%;
         max-width: 40%;
         padding: 0px 15px;
     }
-
     .right-row {
-        height:33%;
+        height: 33%;
         overflow: hidden;
         padding: 16px 0px 16px 12px;
     }
-    
     .left-row {
         height: 66%;
         overflow: hidden;
@@ -212,91 +250,108 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
-    .banner { /* banner image div */
+    .banner {
+        /* banner image div */
         max-height: 300px;
         padding: 0px!important;
     }
-
     .right-description {
         padding: 32px 16px 32px 16px;
     }
-
     .right-description button {
         background-color: #b6b6b6;
         font-size: 4.6vw;
         font-weight: 600;
         width: 100%;
     }
-
     .right-description h4 {
         padding: 32px 0px 24px;
     }
-
     .courses {
         background-color: white;
     }
-
     .information-right {
         padding: 0px;
     }
-
-    .col-12 { /* Section 2 informtaion */
+    .col-12 {
+        /* Section 2 informtaion */
         padding: 0px;
     }
-
     .information-detail {
         padding: 16px 16px 0px 16px
     }
-
     .border-bottom {
         border-bottom: 0px solid #dee2e6!important;
     }
-
     .exhibit-video {
         padding: 16px 0px 24px !important;
     }
-
     footer {
         padding-top: 0px !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar-brand p { /* hide navbrand font on small screen */
+    .navbar-brand p {
+        /* hide navbrand font on small screen */
         display: none;
     }
-
-    .nav-item { 
+    .nav-item {
         width: 100%;
         text-align: right;
     }
-
-    .navbar-nav { /* grow nav item width */
+    .navbar-nav {
+        /* grow nav item width */
         width: 100%;
     }
-
-    a.nav-link { /* hide nav item text */
+    a.nav-link {
+        /* hide nav item text */
         display: none;
     }
-    
-    .nav-icon { /* show nav item icon on small screen/ mobile device */
+    .nav-icon {
+        /* show nav item icon on small screen/ mobile device */
         display: block;
         height: 32px;
         margin: 0;
     }
-    
-    li.or-companies { /* hide "or companies" option */
+    li.or-companies {
+        /* hide "or companies" option */
         display: none;
     }
 }
 
+
 /* GSAP Animation */
+
 h1 span {
     position: absolute;
     color: white;
-    background-color: #e4e4e4;;
+    background-color: #e4e4e4;
+    ;
     height: 100%;
     width: 100%;
     line-height: 1.5;
     z-index: 1;
-   }
+}
+
+@media only screen and (min-width: 1440px) {
+    h1 {
+        font-size: 50.4px;
+    }
+    h2 {
+        font-size: 40.32px;
+    }
+    h3 {
+        font-size: 33.12px;
+    }
+    h4 {
+        font-size: 28.8px;
+    }
+    a,
+    p {
+        font-size: 16px;
+    }
+    .card-text {
+        font-size: 20.16px;
+    }
+}
