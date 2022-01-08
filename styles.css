@@ -134,6 +134,17 @@ nav {
     color: inherit
 }
 
+/* Loading mask */
+#loading-mask {
+    background-color: #faf7f1;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
 /* Section 1: Welcome */
 #welcome {
     background: #e4e4e4;
