@@ -5,9 +5,10 @@ html {
 
 body {
     color: #4a4a4a;
-    /* overflow: hidden; */
-    /* padding: 0px; */
-    /* margin-top: auto; */
+}
+
+main {
+    margin-top: 64px;
 }
 
 @media only screen and (max-width: 319px) {
@@ -17,9 +18,16 @@ body {
     }
 }
 
+img, video {
+    object-fit: cover;
+}
 
-/* fonts */
+a:hover {
+    text-decoration: none;
+}
 
+
+/* Fonts */
 h1 {
     font-size: 3.5vw;
     position: relative;
@@ -39,88 +47,56 @@ h4 {
     font-size: 2vw;
 }
 
-a,
-p {
+a, p {
     font-size: 1.2vw;
 }
 
-@media only screen and (max-width: 767px) {
-    /* font-size in mediumn screen */
-    h1 {
-        font-size: 9.5vw;
-    }
-    h2 {
-        font-size: 8vw;
-    }
-    h3 {
-        font-size: 6.65vw
-    }
-    h4 {
-        font-size: 6.5vw;
-    }
-    a,
-    p {
-        font-size: 3.5vw;
-    }
-}
-
-
 /* Boostrap Component */
-
-.row {
-    /* somehow original row cause horizontal scroll */
+.row { /* somehow original row cause horizontal scroll */
     margin: 0px
 }
 
-.card-header {
-    /* collaspe button in section 3 */
-    padding: 16px 16px 24px 16px;
-}
-
-.card-body {
-    /* course description body */
-    padding: 16px 16px 24px 16px;
-}
-
-.card-text {
-    /* course desciption font size */
-    font-size: 1.4vw;
-}
-
-.btn-link {
-    /* collaspe button style */
-    color: #6d6d6d;
-    font-size: 5vw;
-    font-weight: 600;
-    padding: 0px;
-}
-
-.btn-link:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.btn-link:focus {
-    color: white;
-    text-decoration: none;
-}
-
-
 /* Custom Component */
-
-.narrower {
+.container-1440px { /* set max-width as 1440px */
     width: 100%;
     max-width: 1440px;
     margin: 0px auto;
 }
 
-.highlight  {
+.col-md-60p { /* Column with 60% width */
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0px
+}
+
+.highlight { /* highlighted component */
     background: #e5e5e5;
 }
 
+.description-col { /* Column contains only description */
+    padding-left: 12px;
+}
+
+.synopsis-col { /* Column contains article synopsis */
+    padding: 16px 0px 16px 0px;
+}
+
+.synopsis-row { /* Row contains article synopsis */
+    padding: 16px 16px 48px 16px;
+}
+
+.synopsis-row:hover {
+    opacity: 0.9;
+    background: #b6b6b6;
+}
+
+.banner { /* Banner div */
+    overflow: hidden;
+    padding: 16px 0px !important;
+}
 
 /* Navigation Bar */
-
 ul a {
     font-size: 20px;
 }
@@ -134,49 +110,36 @@ nav {
     padding: 0 24px;
 }
 
-.navbar-expand .navbar-nav .nav-link {
-    /* remove boostrap default padding */
+.navbar-expand .navbar-nav .nav-link { /* remove boostrap default padding */
     padding-right: 0rem;
     padding-left: 0rem;
 }
 
-.navbar-brand {
-    /* set navbrand height */
+.navbar-brand { /* set navbrand height */
     height: 32px;
     margin: 0;
     padding: 0;
 }
 
-.navbar-brand p {
-    /* navbrand font */
+.navbar-brand p { /* navbrand font */
     display: inline;
 }
 
-.nav-item {
-    /* space between each nav item */
+.nav-item { /* space between each nav item */
     margin-left: 16px;
 }
 
-.menu a {
-    /* nav item a tag style */
+.menu a { /* nav item a tag style */
     text-decoration: none;
     color: inherit
 }
 
-.nav-icon {
-    /* hide nav item icon on desktop */
-    display: none;
+/* Section 1: Welcome */
+#welcome {
+    background: #e4e4e4;
 }
 
-
-/* Section 1 */
-
-.banner {
-    overflow: hidden;
-    padding: 32px 12px 32px 24px !important;
-}
-
-.right-description button {
+.description-col button {
     font-size: 1.6vw;
     padding: 8px 0px 8px;
     color: white;
@@ -185,195 +148,174 @@ nav {
     max-width: 388.8px;
 }
 
-.right-description h4 {
+.description-col h4 {
     line-height: 1.5;
     padding: 10px 0px
 }
 
-.courses {
-    background: #eaebec;
-}
-
-.right-description button:hover {
+.description-col button:hover {
     opacity: 0.6 !important;
 }
 
-
-/* Section 2 */
-
-.information-right {
-    padding: 16px 0px 16px 0px;
+/* Section 3: Courses */
+#courses {
+    background: #eaebec;
 }
-
-
-/* Section 3 */
-
 .course-collapse-card {
     background: #e4e4e4;
 }
-
-.right-row {
-    padding: 16px 16px 48px 16px;
+.card-header { /* collaspe button in section 3 */
+    padding: 16px 16px 24px 16px;
 }
-
-.right-row:hover {
-    opacity: 0.9;
-    background: #b6b6b6;
+.card-body { /* course description body */
+    padding: 16px 16px 24px 16px;
 }
-
-
-/* Section 4 */
-
-.exhibit-video {
-    padding: 16px 12px!important;
+.card-text { /* course desciption font size */
+    font-size: 1.4vw;
 }
-
-.col-lg-60,
-.col-lg-40 {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding: 0px
+.btn-link { /* collaspe button style */
+    color: #6d6d6d;
+    font-size: 5vw;
+    font-weight: 600;
+    padding: 0px;
 }
-
+.btn-link:hover, .btn-link:focus  {
+    color: white;
+    text-decoration: none;
+}
 .col-md-4 .card:hover {
     background: #b6b6b6;    
 }
 
-@media only screen and (min-width: 768px) {
-    .col-lg-60 {
-        -ms-flex: 0 0 60%;
-        flex: 0 0 60%;
-        max-width: 60%;
-        padding: 0px 15px;
+/* Break points */
+@media only screen and (max-width: 767px) { /* style only below mediumn screen */
+    /* Fonts */
+    h1 {
+        font-size: 9.5vw;
     }
-    .col-lg-40 {
-        -ms-flex: 0 0 40%;
-        flex: 0 0 40%;
-        max-width: 40%;
-        padding: 0px 15px;
+    h2 {
+        font-size: 8vw;
     }
-    .right-row {
-        height: 33%;
-        overflow: hidden;
-        padding: 16px 0px 16px 12px;
+    h3 {
+        font-size: 6.65vw
     }
-    .left-row {
-        height: 66%;
-        overflow: hidden;
+    h4 {
+        font-size: 6.5vw;
     }
-}
+    a, p {
+        font-size: 3.5vw;
+    }
 
-.right-description {
-    padding-left: 12px;
-}
+    /* Boostrap Component */
+    .border-bottom {
+        border-bottom: 0px solid #dee2e6!important;
+    }
 
-@media only screen and (max-width: 767px) {
-    .banner {
-        /* banner image div */
+    /* Custom Component */
+    .banner { /* Banner div*/
         max-height: 300px;
         padding: 0px!important;
     }
-    .right-description {
+    .description-col {
         padding: 32px 16px 32px 16px;
     }
-    .right-description button {
+    .description-col button {
         background: #b6b6b6;
         font-size: 4.6vw;
         font-weight: 600;
         width: 100%;
     }
-    .right-description h4 {
+    .description-col h4 {
         padding: 32px 0px 24px;
     }
-    .courses {
-        background: white;
-    }
-    .information-right {
+    .synopsis-col {
         padding: 0px;
     }
-    .col-12 {
-        /* Section 2 informtaion */
+    .col-12 { /* synopsis column */
         padding: 0px;
     }
-    .information-detail {
+    .synopsis-detail { /* synopsis text */
         padding: 16px 16px 0px 16px
     }
-    .border-bottom {
-        border-bottom: 0px solid #dee2e6!important;
-    }
-    .exhibit-video {
-        padding: 16px 0px 24px !important;
-    }
-    footer {
-        padding-top: 0px !important;
-    }
-}
 
-@media only screen and (max-width: 768px) {
-    .navbar-brand p {
-        /* hide navbrand font on small screen */
-        display: none;
-    }
+    /* Nav Bar */
     .nav-item {
         width: 100%;
         text-align: right;
     }
-    .navbar-nav {
-        /* grow nav item width */
+    .navbar-nav { /* grow nav item width */
         width: 100%;
     }
-    a.nav-link {
-        /* hide nav item text */
-        display: none;
+
+    /* Section 3: Courses */
+    #courses {
+        background: 0;
     }
-    .nav-icon {
-        /* show nav item icon on small screen/ mobile device */
-        display: block;
-        height: 32px;
-        margin: 0;
+
+    /* Section 4: Thesis */
+    .exhibit-video {
+        padding: 16px 0px 24px !important;
     }
-    li.or-companies {
-        /* hide "or companies" option */
-        display: none;
+
+    /* Footer */
+    footer {
+        padding-top: 0px !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) { /* style only above mediumn screen */
+    /* Custom Component */
+    .col-md-60p { /* Column with 60% width */
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+        padding: 16px 12px 16px 24px;
+    }
+    .synopsis-row {
+        height: 33%;
+        overflow: hidden;
+        padding: 16px 0px 16px 12px;
+    }
+    .banner-row {
+        height: 66%;
+        overflow: hidden;
     }
 }
 
-
-/* GSAP Animation */
-
-h1 span {
-    position: absolute;
-    color: white;
-    background: #e4e4e4;
-    ;
-    height: 100%;
-    width: 100%;
-    line-height: 1.5;
-    z-index: 1;
-}
-
-@media only screen and (min-width: 1440px) {
-    h1 {
+@media only screen and (min-width: 1440px) { /* style only over 1440px width */
+    h1 { /* h1 max-font-size*/
         font-size: 50.4px;
     }
-    h2 {
+    h2 { /* h2 max-font-size*/
         font-size: 40.32px;
     }
-    h3 {
+    h3 { /* h3 max-font-size*/
         font-size: 33.12px;
     }
-    h4 {
+    h4 { /* h4 max-font-size*/
         font-size: 28.8px;
     }
     a,
-    p {
+    p { /* a & p max-font-size*/
         font-size: 16px;
     }
     .card-text {
         font-size: 20.16px;
     }
-    .right-description button {
+    .description-col button {
         font-size: 28px;
     }
+}   
+
+
+/* For GSAP Animation */
+h1 span { /* h1 animation layer mask */
+    position: absolute;
+    color: white;
+    background: #e4e4e4;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    z-index: 1;
 }
