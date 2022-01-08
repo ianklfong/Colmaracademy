@@ -66,7 +66,7 @@
         <!-- End of Navigation Bar -->
     </header>
     <!-- End of Header -->
-
+    <div  id="loading-mask"></div>
     <!-- Start of Main -->
     <main>
         <!-- Start of Section 1: Welcome -->
@@ -528,6 +528,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" crossorigin="anonymous" ></script>
     <!-- GSAP Animation -->
     <script>
+        /* hide loading mask after the page loaded */
+        window.onload=function() {
+            document.getElementById('loading-mask').style.display='none';
+        }
         /* Animation: Navigation Bar  */
         gsap.from('.navbar-brand', { // navbar brand fade in
                 opacity: 0,
