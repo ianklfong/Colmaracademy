@@ -1,6 +1,6 @@
 # COLMARCADEMY
 
->**Colmaracademy**, is a project from "**codecademy**".<br />
+>**Colmaracademy**, is a project from "[**codecademy**](https://www.codecademy.com/learn)".<br />
 >This version was coded in HTML & CSS also with the frameworks, [Boostrap](https://getbootstrap.com/) & [GSAP](https://greensock.com/gsap/).
 
 ## Live Site
